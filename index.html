@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa à venda no Siena - Bairro Esmeralda, Cascavel/PR — Direto com o proprietário</title>
+
+<!--
+  ===========================================================
+  CHECKLIST DO QUE EDITAR ANTES DE PUBLICAR
+  ===========================================================
+  1) Fotos: crie uma pasta "fotos" ao lado deste arquivo e
+     coloque dentro dela: foto1.jpg até foto7.jpg
+     (foto1.jpg é a foto principal / capa)
+  2) Procure por "[EDITAR" no texto da página e troque:
+     - nome do proprietário
+     - telefone / WhatsApp (procure também por "554599999999"
+       no código e troque pelo seu número, só números, com DDI 55)
+     - e-mail
+     - endereço exato / link do mapa
+     - valor do IPTU (se quiser informar)
+  3) Se quiser usar Google Analytics ou Meta Pixel, adicione
+     o script antes de </head>.
+  ===========================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink: #1E2420;
+    --paper: #EFE8D8;
+    --paper-2: #E6DCC6;
+    --cypress: #33493B;
+    --cypress-2: #25342A;
+    --brass: #9C7A3C;
+    --sand: #D8CBAE;
+    --white: #FBF9F3;
+    --line: rgba(30,36,32,0.14);
+    --maxw: 1080px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    margin:0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 28px; }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; }
+  section{ scroll-margin-top:84px; }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:1.2rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--cypress);
+    opacity:0.8;
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(239,232,216,0.92);
+    backdrop-filter:saturate(140%) blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 0;
+  }
+  .brand{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.45rem;
+    display:flex; align-items:baseline; gap:8px;
+  }
+  .brand span{
+    font-family:'IBM Plex Mono', monospace; font-size:0.9rem;
+    color:var(--brass); letter-spacing:0.08em;
+  }
+  nav{ display:flex; gap:28px; }
+  nav a{
+    font-size:0.92rem; color:var(--cypress-2);
+    border-bottom:1px solid transparent;
+    padding-bottom:2px;
+    transition:border-color .2s;
+  }
+  nav a:hover{ border-color:var(--brass); }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--cypress); color:var(--white);
+    padding:11px 20px; border-radius:3px;
+    font-size:0.9rem; font-weight:500;
+    border:none; cursor:pointer;
+    transition:background .2s, transform .15s;
+  }
+  .btn:hover{ background:var(--cypress-2); transform:translateY(-1px); }
+  .btn.ghost{
+    background:transparent; color:var(--cypress);
+    border:1px solid var(--cypress);
+  }
+  .btn.ghost:hover{ background:var(--cypress); color:var(--white); }
+  .nav-toggle{ display:none; background:none; border:none; font-size:1.4rem; cursor:pointer; color:var(--ink);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:48px 0 0;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.5fr 1fr; gap:6px;
+    border-radius:4px; overflow:hidden;
+  }
+  .foto-slot{
+    position:relative; background:var(--sand); overflow:hidden;
+    aspect-ratio:4/3;
+    cursor:pointer;
+  }
+  .foto-slot img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s; }
+  .foto-slot:hover img{ transform:scale(1.04); }
+  .foto-slot.sem-foto img{ display:none; }
+  .foto-slot.sem-foto::after{
+    content:attr(data-placeholder);
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:10px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem;
+    color:var(--cypress); opacity:0.55;
+    background:repeating-linear-gradient(135deg, var(--sand), var(--sand) 10px, var(--paper-2) 10px, var(--paper-2) 20px);
+  }
+  .hero-main{ grid-row:span 2; }
+  .hero-thumbs{ display:grid; grid-template-rows:1fr 1fr; gap:6px; }
+
+  .hero-info{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap:wrap; gap:24px;
+    padding:28px 0 40px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-info h1{ font-size:clamp(1.9rem, 4vw, 2.7rem); line-height:1.08; max-width:600px; }
+  .hero-info h1 em{ font-style:italic; font-weight:500; color:var(--cypress); }
+  .hero-loc{ margin-top:10px; font-size:1rem; color:var(--cypress-2); }
+  .price-tag{ text-align:right; }
+  .price-tag .label{ font-size:0.8rem; color:var(--brass); }
+  .price-tag .value{ font-size:clamp(1.6rem,3.4vw,2.2rem); font-family:'Fraunces',serif; font-weight:600; }
+
+  /* ---------- FICHA TÉCNICA (signature element) ---------- */
+  .ficha-wrap{ padding:64px 0; }
+  .ficha-head{ margin-bottom:28px; }
+  .ficha{
+    position:relative;
+    border:1px solid var(--line);
+    background:var(--white);
+    padding:50px 44px;
+    border-radius:2px;
+  }
+  .tick{ position:absolute; width:18px; height:18px; }
+  .tick-tl{ top:-1px; left:-1px; border-top:2px solid var(--brass); border-left:2px solid var(--brass); }
+  .tick-tr{ top:-1px; right:-1px; border-top:2px solid var(--brass); border-right:2px solid var(--brass); }
+  .tick-bl{ bottom:-1px; left:-1px; border-bottom:2px solid var(--brass); border-left:2px solid var(--brass); }
+  .tick-br{ bottom:-1px; right:-1px; border-bottom:2px solid var(--brass); border-right:2px solid var(--brass); }
+
+  .ficha-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:0 48px;
+  }
+  .ficha-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .ficha-row:nth-last-child(1), .ficha-row:nth-last-child(2){ border-bottom:none; }
+  .ficha-label{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem;
+    letter-spacing:0.06em; text-transform:uppercase; color:var(--cypress-2); opacity:0.75;
+  }
+  .ficha-value{ font-family:'Fraunces', serif; font-weight:600; font-size:1.25rem; }
+  .stamp{
+    position:absolute; bottom:-14px; right:36px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.72rem;
+    color:var(--brass); background:var(--paper); padding:4px 10px;
+    border:1px solid var(--brass); border-radius:2px;
+    transform:rotate(-3deg);
+  }
+
+  /* ---------- SOBRE ---------- */
+  .sobre{ padding:24px 0 64px; display:grid; grid-template-columns:1fr 1.3fr; gap:56px; align-items:start; }
+  .sobre h2{ font-size:1.9rem; }
+  .sobre p{ font-size:1.05rem; color:var(--cypress-2); max-width:560px; }
+  .sobre .destaque{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    font-size:1.3rem; color:var(--ink); margin-top:0; line-height:1.4;
+  }
+
+  /* ---------- GALERIA ---------- */
+  .galeria{ padding:24px 0 70px; }
+  .galeria-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:8px;
+  }
+  .galeria-grid .foto-slot{ border-radius:2px; }
+
+  /* ---------- LOCALIZAÇÃO ---------- */
+  .local{ padding:24px 0 70px; }
+  .local-box{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:24px;
+    background:var(--cypress); color:var(--white);
+    border-radius:4px; padding:40px 44px;
+  }
+  .local-box h2{ color:var(--white); font-size:1.6rem; }
+  .local-box p{ margin-top:8px; color:var(--sand); font-size:0.98rem; }
+  .local-box .btn{ background:var(--white); color:var(--cypress-2); white-space:nowrap; }
+  .local-box .btn:hover{ background:var(--sand); }
+
+  /* ---------- CONTATO ---------- */
+  .contato{ padding:24px 0 80px; }
+  .contato-grid{
+    display:grid; grid-template-columns:0.9fr 1.1fr; gap:48px;
+  }
+  .perfil{
+    background:var(--white); border:1px solid var(--line); border-radius:4px;
+    padding:36px;
+  }
+  .perfil .eyebrow{ margin-bottom:14px; }
+  .perfil h3{ font-size:1.35rem; }
+  .perfil .placeholder{ color:var(--brass); }
+  .perfil-list{ margin-top:18px; display:flex; flex-direction:column; gap:10px; font-size:0.97rem; }
+  .perfil-list a{ color:var(--cypress); }
+  .perfil .botoes{ margin-top:24px; display:flex; flex-direction:column; gap:10px; }
+
+  form{
+    background:var(--white); border:1px solid var(--line); border-radius:4px;
+    padding:36px; display:flex; flex-direction:column; gap:16px;
+  }
+  label{ font-size:0.82rem; font-family:'IBM Plex Mono', monospace; letter-spacing:0.04em; color:var(--cypress-2); }
+  input, textarea{
+    font-family:'Work Sans', sans-serif; font-size:1rem;
+    border:1px solid var(--line); border-radius:3px;
+    padding:11px 13px; background:var(--paper); color:var(--ink);
+    margin-top:6px; width:100%;
+  }
+  input:focus, textarea:focus{ outline:2px solid var(--brass); outline-offset:1px; }
+  textarea{ resize:vertical; min-height:90px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line); padding:28px 0 110px;
+    font-size:0.85rem; color:var(--cypress-2); opacity:0.8;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+
+  /* ---------- STICKY MOBILE CTA ---------- */
+  .sticky-cta{
+    position:fixed; left:0; right:0; bottom:0; z-index:60;
+    display:none; gap:8px; padding:10px 14px;
+    background:var(--paper); border-top:1px solid var(--line);
+  }
+  .sticky-cta .btn{ flex:1; justify-content:center; }
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{
+    position:fixed; inset:0; background:rgba(20,22,18,0.92); z-index:100;
+    display:none; align-items:center; justify-content:center; padding:24px;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-height:90vh; border-radius:3px; }
+  .lightbox .close{
+    position:absolute; top:20px; right:24px; color:var(--white);
+    font-size:1.8rem; cursor:pointer; background:none; border:none;
+  }
+  .lightbox .ph-text{ color:var(--sand); font-family:'IBM Plex Mono', monospace; text-align:center; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; }
+  }
+
+  @media (max-width: 880px){
+    nav{ display:none; }
+    .nav-toggle{ display:block; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .hero-main{ grid-row:auto; }
+    .hero-thumbs{ grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+    .ficha-grid{ grid-template-columns:1fr; }
+    .ficha-row:nth-last-child(2){ border-bottom:1px solid var(--line); }
+    .sobre{ grid-template-columns:1fr; gap:28px; }
+    .galeria-grid{ grid-template-columns:repeat(2, 1fr); }
+    .contato-grid{ grid-template-columns:1fr; }
+    .sticky-cta{ display:flex; }
+    footer{ padding-bottom:140px; }
+  }
+
+  .more-photos{
+  position:relative;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+
+.lightbox .nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:none;
+  border:none;
+  color:white;
+  font-size:3rem;
+  cursor:pointer;
+  z-index:101;
+}
+
+.lightbox .prev{
+  left:20px;
+}
+
+.lightbox .next{
+  right:20px;
+}
+
+/* ---------- VIDEO ---------- */
+
+.video-imovel{
+  padding:24px 0 70px;
+}
+
+.video-card{
+    position:relative;
+    max-width:700px;
+    height:400px;
+    margin:0 auto;
+    cursor:pointer;
+    border-radius:8px;
+    overflow:hidden;
+    background:#33493B;
+}
+
+.video-card img{
+    width:100%;
+    display:block;
+}
+
+.video-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+}
+
+.play-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:white;
+    color:#33493B;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+#videoLightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.95);
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+#videoLightbox.open{
+    display:flex;
+}
+
+#videoCasa{
+    max-width:90vw;
+    max-height:90vh;
+}
+
+#videoLightbox .close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.video-card video{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.hero-grid-2{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:6px;
+}
+
+.hero-grid-dupla{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:6px;
+}
+
+.hero-grid-dupla .foto-slot{
+    height:520px;
+    aspect-ratio:auto;
+}
+
+.hero-grid-dupla .foto-slot img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.documentos{
+    padding:20px 0 60px;
+}
+
+.docs-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.doc-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:4px;
+
+    padding:24px;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.2s;
+}
+
+.doc-card:hover{
+    transform:translateY(-2px);
+    border-color:var(--brass);
+}
+
+.doc-icon{
+    font-size:1.8rem;
+    margin-bottom:12px;
+}
+
+.doc-card h3{
+    margin:0;
+    font-size:1.05rem;
+    line-height:1.4;
+}
+
+.doc-btn{
+    margin-top:16px;
+
+    font-family:'IBM Plex Mono', monospace;
+    font-size:.85rem;
+
+    color:var(--brass);
+}
+
+.imovel{
+    padding:20px 0 60px;
+}
+
+.sobre-imovel{
+    text-align:justify;
+    text-indent:2em;
+    line-height:1.6;
+    margin:0 0 .8rem 0;
+}
+
+.destaque-final{
+    text-align:center !important;
+    text-indent:0 !important;
+    font-style:italic;
+    margin-top:1rem;
+    margin-bottom:0;
+}
+
+.ficha-head{
+    margin-bottom:1rem;
+}
+
+.proprietario{
+    margin-bottom:1.25rem;
+}
+
+.proprietario h3{
+    margin-bottom:.35rem;
+}
+
+.email-contato{
+    padding-top:.75rem;
+    margin-top:.75rem;
+    border-top:1px solid var(--line);
+}
+
+.email-contato p{
+    margin:.2rem 0;
+}
+
+
+@media (max-width:768px){
+
+    .wrap{
+        padding:0 18px;
+    }
+
+    .hero-grid-dupla{
+        grid-template-columns:1fr;
+    }
+
+    .hero-grid-dupla .foto-slot{
+        height:260px;
+    }
+
+    .hero-info{
+        padding:20px 0 30px;
+    }
+
+    .hero-info h1{
+        font-size:1.8rem;
+        line-height:1.15;
+    }
+
+    .hero-loc{
+        font-size:.95rem;
+    }
+
+    .price-tag{
+        text-align:left;
+        width:100%;
+    }
+
+    .ficha{
+        padding:25px 18px;
+    }
+
+    .video-card{
+        height:220px;
+    }
+
+    .docs-grid{
+        grid-template-columns:1fr;
+    }
+
+    .local-box{
+        padding:24px;
+    }
+
+    .local-box h2{
+        font-size:1.2rem;
+        line-height:1.4;
+    }
+
+    .sobre-imovel{
+        text-indent:0;
+        text-align:left;
+        font-size:.98rem;
+        line-height:1.75;
+    }
+
+    .lightbox .nav{
+        font-size:2rem;
+    }
+
+    .lightbox .prev{
+        left:10px;
+    }
+
+    .lightbox .next{
+        right:10px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <div class="brand">Casa no Bairro Esmeralda <span>VENDA DIRETA</span></div>
+    <nav>
+      <a href="#detalhes">Detalhes</a>
+      <a href="#fotos">Galeria</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+<div class="hero-grid-dupla">
+
+  <div class="foto-slot" data-hero="0">
+    <img src="fotos/foto1.jpg" alt="Foto 1">
+  </div>
+
+  <div class="foto-slot" data-hero="1">
+    <img src="fotos/foto2.jpg" alt="Foto 2">
+  </div>
+
+</div>
+
+    <div class="hero-info">
+      <div>
+        <h1>Imóvel no Loteamento Siena </h1>
+        <p class="hero-loc">Bairro Esmeralda, Cascavel – PR</p>
+      </div>
+      <div class="price-tag">
+        <div class="label mono">Venda</div>
+        <div class="value">R$ 355.000,00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FICHA TÉCNICA -->
+  <section class="ficha-wrap" id="detalhes">
+    <div class="ficha-head">
+      <p class="eyebrow">Ficha do imóvel</p>
+    </div>
+    <div class="ficha">
+      <span class="tick tick-tl"></span><span class="tick tick-tr"></span>
+      <span class="tick tick-bl"></span><span class="tick tick-br"></span>
+<div class="ficha-grid">
+
+  <div class="ficha-row">
+    <span class="ficha-label">Área do terreno</span>
+    <span class="ficha-value">105,63 m²</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Área construída</span>
+    <span class="ficha-value">63,26 m²</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Suíte</span>
+    <span class="ficha-value">1</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Quartos</span>
+    <span class="ficha-value">1</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Banheiros</span>
+    <span class="ficha-value">2</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Garagem descoberta</span>
+    <span class="ficha-value">2 veículos</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">Área gourmet</span>
+    <span class="ficha-value">Sim</span>
+  </div>
+
+  <div class="ficha-row">
+    <span class="ficha-label">BLABLABLA</span>
+    <span class="ficha-value">??</span>
+  </div>
+  </section>
+
+  <!-- SOBRE -->
+<section class="imovel"> 
+    <div class="ficha-head">
+        <p class="eyebrow">Sobre o imóvel</p>
+
+        <h2>
+            Direto com o proprietário,
+            sem intermediários
+        </h2>
+    </div>
+
+    <p class="sobre-imovel">
+        As residências foram projetadas para oferecer ótima iluminação natural,
+        integração dos ambientes e excelente aproveitamento dos espaços internos e externos.
+    </p>
+
+    <p class="sobre-imovel">
+        Um dos grandes destaques é a sala ampla com pé-direito elevado de 4 metros de altura,
+        proporcionando maior sensação de amplitude, conforto e sofisticação. A cozinha integrada,
+        a área gourmet e a varanda frontal compõem um ambiente agradável e funcional,
+        ideal para receber amigos e familiares e aproveitar os momentos do dia a dia.
+    </p>
+
+    <p class="sobre-imovel">
+        O acabamento foi executado com atenção aos detalhes, incluindo piso em porcelanato,
+        revestimentos até o teto nas áreas molhadas, molduras em gesso em todos os cômodos,
+        teto da sala rebaixado em gesso com iluminação em LED e iluminação em LED em toda a residência.
+        Na área externa, o imóvel conta com textura lisa e pintura em tinta emborrachada,
+        proporcionando maior durabilidade e proteção.
+    </p>
+
+    <p class="sobre-imovel">
+        A construção conta ainda com laje, instalações elétricas executadas dentro das especificações técnicas,
+        utilizando fios das marcas Sil ou Corfio, além de preparação elétrica em 220V para ar-condicionado
+        na sala e nos dois quartos e para torneira elétrica na cozinha. Todas as janelas possuem vidros
+        temperados fumê, enquanto a porta da cozinha é confeccionada em vidro temperado incolor.
+        O imóvel dispõe também de garagem descoberta para dois veículos de grande porte,
+        com espaço suficiente para até duas picapes, oferecendo mais praticidade aos futuros moradores.
+    </p>
+
+    <p class="destaque-final">
+        Projeto moderno, ambientes amplos e acabamento pensado para quem busca conforto e praticidade.
+    </p>
+
+</section>
+
+  <section class="documentos">
+    <div class="ficha-head">
+        <p class="eyebrow">Documentação</p>
+        <h2>Projetos e documentos</h2>
+    </div>
+
+<div class="docs-grid">
+
+<a href="pdfs/prancha-aprovada.pdf" target="_blank" class="doc-card">
+
+    <div class="doc-icon">📄</div>
+
+    <h3>Prancha Aprovada Definitiva</h3>
+
+    <span class="doc-btn">
+        Abrir PDF →
+    </span>
+
+</a>
+
+<a href="pdfs/projeto-executivo.pdf" target="_blank" class="doc-card">
+
+    <div class="doc-icon">📐</div>
+
+    <h3>Projeto Executivo</h3>
+
+    <span class="doc-btn">
+        Abrir PDF →
+    </span>
+
+</a>
+
+</div>
+</section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="fotos">
+    <div class="ficha-head">
+      <p class="eyebrow">Galeria</p>
+      <h2>Conheça cada ambiente</h2>
+    </div>
+    <div class="galeria-grid">
+      <div class="foto-slot" data-index="0">
+        <img src="fotos/foto3.jpg" alt="Fachada">
+      </div>
+      <div class="foto-slot" data-index="1">
+        <img src="fotos/foto4.jpg" alt="Sala">
+      </div>
+      <div class="foto-slot" data-index="2">
+        <img src="fotos/foto5.jpg" alt="Cozinha">
+      </div>
+      <div class="foto-slot more-photos" data-index="3">
+        <img src="fotos/foto6.jpg" alt="Quarto">
+       <div class="overlay">+5 fotos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX DE FOTOS (estava faltando no HTML; o JS já tentava usar estes IDs) -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="lightbox-close">&times;</button>
+    <button class="nav prev">&#8249;</button>
+    <div id="lightbox-content"></div>
+    <button class="nav next">&#8250;</button>
+  </div>
+
+<!-- VÍDEO -->
+<section class="video-imovel">
+<div class="video-card" id="abrirVideo">
+
+    <video id="videoPreview" muted preload="metadata">
+        <source src="videos/casa.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay">
+        <div class="play-circle">
+            <svg width="64" height="64" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" fill="currentColor"/>
+            </svg>
+        </div>
+        <span>Assistir vídeo da casa</span>
+    </div>
+
+</div>
+
+<div class="lightbox" id="videoLightbox">
+    <button class="close" id="fecharVideo">&times;</button>
+
+    <video id="videoCasa" controls>
+        <source src="videos/casa.mp4" type="video/mp4">
+    </video>
+</div>
+</section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="local" id="localizacao">
+    <div class="ficha-head">
+      <p class="eyebrow">Localização</p>
+
+    </div>
+    <div class="local-box">
+      <div>
+        <h2>Rua José Nunes, casas n° 84 e n° 94, Loteamento Siena, Cascavel – PR</h2>
+        <p>Consulte a localização exata pelo Google Maps.</p>
+      </div>
+      <a class="btn" target="_blank" rel="noopener"
+         href="https://www.google.com/maps?q=-24.9787024,-53.5124557&z=17&hl=pt-BR">
+        Ver no mapa
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="ficha-head">
+      <p class="eyebrow">Contato</p>
+      <h2>Vamos conversar</h2>
+    </div>
+    <div class="contato-grid">
+<div class="perfil">
+
+    <p class="eyebrow">Proprietários</p>
+
+    <div class="proprietario">
+        <h3 class="placeholder">André</h3>
+        <p>
+            📞 <a href="tel:+55 45 98813-2580" class="placeholder">
+                (45) 98813-2580
+            </a>
+        </p>
+    </div>
+
+    <div class="proprietario">
+        <h3 class="placeholder">Godoy</h3>
+        <p>
+            📞 <a href="tel:+55 45 99934-3753" class="placeholder">
+                (45) 99934-3753
+            </a>
+        </p>
+    </div>
+
+    <div class="email-contato">
+        <p><strong>E-mail para contato</strong></p>
+        <p>
+            ✉️
+            <a href="mailto:casaidealcascavel@gmail.com" class="placeholder">
+                casaidealcascavel@gmail.com
+            </a>
+        </p>
+    </div>
+
+    <div class="botoes">
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/5545988132580?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20da%20casa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+            Falar no WhatsApp
+        </a>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<script>
+  // Lightbox simples para a galeria
+
+const fotosHero = [
+  'fotos/foto1.jpg',
+  'fotos/foto2.jpg'
+];
+
+const fotos = [
+  'fotos/foto3.jpg',
+  'fotos/foto4.jpg',
+  'fotos/foto5.jpg',
+  'fotos/foto6.jpg',
+  'fotos/foto7.jpg',
+  'fotos/foto8.jpg',
+  'fotos/foto9.jpg',
+
+];
+
+let modoGaleria = false;
+
+document.querySelectorAll('[data-hero]').forEach(slot => {
+
+  slot.addEventListener('click', () => {
+
+    modoGaleria = false;
+
+    fotoAtual = Number(slot.dataset.hero);
+
+    lightboxContent.innerHTML =
+      `<img src="${fotosHero[fotoAtual]}" style="max-height:90vh;">`;
+
+    lightbox.classList.add('open');
+  });
+
+});
+
+let fotoAtual = 0;
+
+const lightbox = document.getElementById('lightbox');
+const lightboxContent = document.getElementById('lightbox-content');
+
+function mostrarFoto() {
+  lightboxContent.innerHTML =
+    `<img src="${fotos[fotoAtual]}" style="max-height:90vh;">`;
+}
+
+document.querySelectorAll('.galeria .foto-slot').forEach(slot => {
+
+  slot.addEventListener('click', () => {
+
+    modoGaleria = true;
+
+    fotoAtual = Number(slot.dataset.index || 0);
+
+    mostrarFoto();
+
+    lightbox.classList.add('open');
+
+  });
+
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+
+  if(modoGaleria){
+
+    fotoAtual = (fotoAtual + 1) % fotos.length;
+
+    mostrarFoto();
+
+  }else{
+
+    fotoAtual = (fotoAtual + 1) % fotosHero.length;
+
+    lightboxContent.innerHTML =
+      `<img src="${fotosHero[fotoAtual]}" style="max-height:90vh;">`;
+
+  }
+
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+
+  if(modoGaleria){
+
+    fotoAtual = (fotoAtual - 1 + fotos.length) % fotos.length;
+
+    mostrarFoto();
+
+  }else{
+
+    fotoAtual = (fotoAtual - 1 + fotosHero.length) % fotosHero.length;
+
+    lightboxContent.innerHTML =
+      `<img src="${fotosHero[fotoAtual]}" style="max-height:90vh;">`;
+
+  }
+
+});
+
+const lightboxClose = document.getElementById('lightbox-close');
+if (lightboxClose) {
+  lightboxClose.addEventListener('click', () => {
+    lightbox.classList.remove('open');
+  });
+}
+
+  // Formulário de contato -> abre e-mail com os dados preenchidos
+  // [EDITAR]: troque "seuemail@exemplo.com" pelo seu e-mail real
+  const formContato = document.getElementById('form-contato');
+  if (formContato) {
+    formContato.addEventListener('submit', function(e){
+      e.preventDefault();
+      var nome = document.getElementById('nome').value;
+      var telefone = document.getElementById('telefone').value;
+      var mensagem = document.getElementById('mensagem').value;
+      var corpo = 'Nome: ' + nome + '\nTelefone: ' + telefone + '\n\n' + mensagem;
+      window.location.href = 'mailto:seuemail@exemplo.com'
+        + '?subject=' + encodeURIComponent('Contato site - Casa Esmeralda')
+        + '&body=' + encodeURIComponent(corpo);
+    });
+  }
+
+const abrirVideo = document.getElementById('abrirVideo');
+const videoLightbox = document.getElementById('videoLightbox');
+const fecharVideo = document.getElementById('fecharVideo');
+const videoCasa = document.getElementById('videoCasa');
+
+if (abrirVideo && videoLightbox && fecharVideo && videoCasa) {
+  abrirVideo.addEventListener('click', () => {
+      videoLightbox.classList.add('open');
+      videoCasa.play();
+  });
+
+  fecharVideo.addEventListener('click', () => {
+      videoCasa.pause();
+      videoLightbox.classList.remove('open');
+  });
+
+  videoLightbox.addEventListener('click', (e) => {
+      if(e.target === videoLightbox){
+          videoCasa.pause();
+          videoLightbox.classList.remove('open');
+      }
+  });
+}
+
+</script>
+
+</body>
+</html>
